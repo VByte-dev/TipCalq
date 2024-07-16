@@ -1,0 +1,94 @@
+/* Fonts */
+@font-face{
+  font-family: oddVal;
+  src: url(Stocks/Fonts/OddvalText-SemiBold.ttf);
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+
+  font-family: oddVal;
+  background-color: black;
+}
+
+/* Navbar */
+.nav{
+  text-align: center;
+  margin: 100px 100px; 
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Home */
+.home{
+  display: flex;
+  justify-content: center;
+}
+#seperator{
+  border: none;
+  background-color: black;
+  height: 2px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#cardHead{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#tipCalq{
+  text-align: center;
+  margin-top: 50px;
+  height: 430px;
+  width: 300px;
+  background-color: white;
+  border-radius: 5px;
+}
+#amount, #tip, #person{
+  font-family: monospace;
+  height: 40px;
+  margin: 10px 10px 20px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid black;
+  font-family: oddVal;
+  color: black;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 30px;
+}
+#cardTotal{
+  font-family: monospace;
+  font-size: large;
+  margin-top: 30px;
+}
+
+/* Footer */
+.lower{
+  margin-top: 200px;
+  text-align: center;
+  background-color: white;
+  padding: 50px;
+  font-size: large;
+  font-weight: bold;
+}
+
+/* Resconsive - 500px */
+@media (max-width:500px){
+  /* Navbar */
+  .nav{
+    margin: 30px 30px 80px 30px;
+    font-size: small;
+  }
+  /* Footer */
+  .lower{
+    margin-top: 150px;
+  }
+}
