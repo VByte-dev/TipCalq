@@ -84,7 +84,7 @@ html, body{
 @media (max-width:500px){
   /* Navbar */
   .nav{
-    margin: 30px 30px 80px 30px;
+    margin: 50px 30px 80px 30px;
     font-size: small;
   }
   /* Footer */
