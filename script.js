@@ -6,15 +6,22 @@ let tppAmount = () => {
   let amountV = Number(amount.value);
   let tipV = Number(tip.value);
   let personV = Number(person.value);
+  
+  console.log(personV);
+
+  if (personV === 0) {
+    document.querySelector('#cardTotal').innerHTML = `Number of people cannot be zero.`;
+    return 0; 
+  }
 
   let tipAmount = ((tipV / 100) * amountV) / personV;
-  // Display the calculated tip amount
+
   document.querySelector('#cardTotal').innerHTML = `${tipAmount.toFixed(2)}₹ Per Person`;
 
   return tipAmount;
 };
 
-// Adding event listeners to trigger tppAmount on input changes
+
 document.querySelector('#amount').addEventListener('input', tppAmount);
 document.querySelector('#tip').addEventListener('input', tppAmount);
 document.querySelector('#person').addEventListener('input', tppAmount);
